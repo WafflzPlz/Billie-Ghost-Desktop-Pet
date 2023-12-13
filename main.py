@@ -3,7 +3,7 @@ import os
 from dotenv import load_dotenv
 
 load_dotenv()
-PIC_PATH = os.getenv('PATH')
+PIC_PATH = os.getenv("PIC_PATH")
 
 def main():
     print(PIC_PATH)
