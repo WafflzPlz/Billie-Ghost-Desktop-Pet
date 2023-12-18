@@ -6,10 +6,10 @@ load_dotenv()
 PIC_PATH = os.getenv("PIC_PATH")
 
 def main():
-    window = tk.Tk()
-    greeting = tk.Label(text="Hello World!")
-    greeting.pack()
-    window.mainloop()
+    master = tk.Tk()
+    label = tk.Label(master, width=128, height=128, image=os.path.join(PIC_PATH, "idle.png"))
+    label.pack()
+    master.mainloop()
 
 if __name__ == '__main__':
     main()
